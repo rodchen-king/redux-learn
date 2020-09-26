@@ -24,4 +24,9 @@ const AddTodo = ({ dispatch }) => {
   )
 }
 
-export default connect()(AddTodo)
+// export default connect()(AddTodo)
+
+export default connect(state => state)(AddTodo)
+
+// export default connect(state => ({todos: state.todos}))(AddTodo)
+

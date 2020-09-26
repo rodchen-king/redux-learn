@@ -9,6 +9,8 @@ const { composeWithDevTools } = require('redux-devtools-extension');
 
 const store = createStore(reduces, composeWithDevTools());
 
+console.log(store)
+
 ReactDOM.render(
   <Provider store={store}>
     <App />

@@ -11,6 +11,11 @@ const store = createStore(reduces, {name: 'rodchen'}, composeEnhancers());
 
 console.log(store)
 
+
+store.subscribe((asdf) => {
+  console.log(store.getState())
+})
+
 ReactDOM.render(
   <Provider store={store}>
     <App />

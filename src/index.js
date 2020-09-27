@@ -7,7 +7,7 @@ import App from "./components/App";
 
 const { composeWithDevTools } = require('redux-devtools-extension');
 const composeEnhancers = composeWithDevTools({ trace: true })
-const store = createStore(reduces, {}, composeEnhancers());
+const store = createStore(reduces, {name: 'rodchen'}, composeEnhancers());
 
 console.log(store)
 

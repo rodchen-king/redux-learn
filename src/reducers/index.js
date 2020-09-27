@@ -4,5 +4,6 @@ import visibilityFilter from './visibilityFilter'
 
 export default combineReducers({
   todos,
-  visibilityFilter
+  visibilityFilter,
+  name: (preState = "", action) => {return preState}
 })
